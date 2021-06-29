@@ -1,38 +1,54 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-<div class="card">
+<form class="card" method="post" action="/teachers">
     <section class="image" style="background: url(https://source.unsplash.com/collection/1361815/800x800) no-repeat center center / cover">
     </section>
     <section class="details">
-        <h3>Detalhes</h3>
+        <h3>Novo Professor</h3>
         <div class="item">
-            <div>Nome Completo</div>
-            <div>Victor Martins</div>
-        </div>
-        <div class="item">
-            <div>Idade</div>
-            <div>24 anos</div>
-        </div>
-        <div class="item">
-            <div>Grau de escolaridade</div>
-            <div>Graduando</div>
-        </div>
-        <div class="item">
-            <div>Tipo de aula</div>
-            <div>À distância</div>
-        </div>
-        <div class="item">
-            <div>Acompanhamento</div>
+            <div>Avatar URL</div>
             <div>
-                <span>Programação</span>
-                <span>Estatística</span>
+                <input type="url" name="avatar_url" placeholder="http://">
             </div>
         </div>
         <div class="item">
-            <div>Desde</div>
-            <div>01/01/2021</div>
+            <div>Professor</div>
+            <div>
+                <input type="text" name="name" placeholder="Nome Completo">
+            </div>
         </div>
+        <div class="item">
+            <div>Data de Nascimento</div>
+            <div>
+                <input type="date" name="birth">
+            </div>
+        </div>
+        <div class="item">
+            <div>Grau de escolaridade</div>
+            <div>
+                <select name="education_level">
+                    <option value="high">Ensino Médio Completo</option>
+                    <option value="university">Ensino Superior Completo</option>
+                    <option value="master">Mestrado</option>
+                    <option value="doctorate">Doutorado</option>
+                </select>
+            </div>
+        </div>
+        <div class="item">
+            <div>Tipo de aula</div>
+            <div>
+                <span><input type="radio" name="class_type" value="in_person" checked>Presencial</span>
+                <span><input type="radio" name="class_type" value="distance">À distância</span>
+            </div>
+        </div>
+        <div class="item">
+            <div>Área de Atuação</div>
+            <div>
+                <input type="text" name="occupations" placeholder="Separar as ocupações por vírgula">
+            </div>
+        </div>
+        <button type="submit">Salvar</button>
     </section>
-</div>
+</form>
 {% endblock content %}

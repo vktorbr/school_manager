@@ -132,3 +132,33 @@ header{
     font-weight: bold;
     color: #777;
 }
+
+/* FORM */
+input{
+    width: 100%;
+    outline: none;
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type="radio"]{
+    width: initial;
+    margin-right: 4px;
+}
+
+button::placeholder{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+button[type="submit"]{
+    background-color: var(--primary-color);
+    padding: 8px 32px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 32px;
+    color: white;
+    cursor: pointer;
+}
