@@ -134,6 +134,10 @@ header{
 }
 
 /* FORM */
+form{
+    display: inline;
+}
+
 input{
     width: 100%;
     outline: none;
@@ -157,12 +161,13 @@ button[type="submit"],
 {
     background-color: var(--primary-color);
     padding: 8px 32px;
-    width: 100%;
+    width: 49%;
     font-size: 16px;
     border-radius: 4px;
     margin-top: 32px;
     color: white;
     cursor: pointer;
+    display: inline;
 }
 
 .button{
@@ -170,4 +175,13 @@ button[type="submit"],
     display: block;
     text-align: center;
     box-sizing: border-box;
+}
+
+#form-delete{
+    display: inline;
+}
+
+#form-delete [type="submit"]{
+    margin-top: 8px;
+    background-color: lightcoral;
 }

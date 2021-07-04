@@ -30,7 +30,7 @@ exports.date = function(timestamp){
 
     const year = birth.getUTCFullYear();
     
-    const month = `0${birth.getUTCMonth()}`.slice(-2);
+    const month = `0${birth.getUTCMonth() + 1}`.slice(-2);
 
     const day = `0${birth.getUTCDate()}`.slice(-2);
 
