@@ -2,13 +2,29 @@
   "teachers": [
     {
       "id": 1,
-      "created_at": 1625161823121,
-      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Arnold_Schwarzenegger_1974.jpg/412px-Arnold_Schwarzenegger_1974.jpg",
+      "created_at": 1625450729956,
+      "avatar_url": "https://images.unsplash.com/flagged/photo-1574110906643-8311b0ce29d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      "name": "Ronnie Coleman",
+      "birth": 886291200000,
+      "education_level": "4",
+      "class_type": "in_person",
+      "occupations": [
+        "Direito",
+        "Filosofia"
+      ]
+    },
+    {
+      "id": 2,
+      "created_at": 1625450999366,
+      "avatar_url": "https://images.unsplash.com/photo-1543761049-4a134358c6b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
       "name": "Vktor Mrtins",
       "birth": 850694400000,
-      "education_level": "2",
+      "education_level": "1",
       "class_type": "in_person",
-      "occupations": "Computação, Data Science"
+      "occupations": [
+        "Computação",
+        "Data Science"
+      ]
     }
   ]
 }

@@ -9,7 +9,9 @@
         <form method="post" action="/teachers?_method=put">
             <h3>Editar Professor</h3>
             {% include "teachers/fields.njk" %}
-
+            
+            <button type="submit">Salvar</button>   
+            
             <input type="hidden" name="id" value="{{ teacher.id }}">
         </form>
 
