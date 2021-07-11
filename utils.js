@@ -34,6 +34,22 @@ exports.date = function(timestamp){
 
     const day = `0${birth.getUTCDate()}`.slice(-2);
 
-    return `${year}-${month}-${day}`;
-    //yyyy-mm-dd
+    return {
+        day, 
+        month,
+        year,
+        birthDay: `${day}/${month}`, 
+        iso: `${year}-${month}-${day}`
+    };
+}
+
+exports.year = function(school_year){
+    const middles = ["5° ano do ensino fundamental", "6° ano do ensino fundamental", "7° ano do ensino fundamental", "8° ano do ensino fundamental", "9° ano do ensino fundamental"];
+
+    const highs = ["1° ano do ensino médio", "2° ano do ensino médio", "3° ano do ensino médio"];
+
+    const number = Number(school_year.charAt(0));
+    const select = school_year.charAt(1);
+
+    return (select == "m" ? middles[number - 5] : highs[number - 1]);
 }

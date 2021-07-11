@@ -139,7 +139,7 @@ form{
     display: inline;
 }
 
-input{
+input, select{
     width: 100%;
     outline: none;
     color: #555;
@@ -237,7 +237,8 @@ tbody tr td:first-child span{
     box-shadow: 3px 1px 6px -4px black;
 }
 
-tbody tr td:last-child a{
+tbody tr td:last-child a,
+.table-container > a{
     background-color: var(--primary-color);
     padding: 8px 16px;
     color: white;
@@ -246,5 +247,10 @@ tbody tr td:last-child a{
     border-radius: 4px;
     font-size: 12px;
     font-weight: bold;
+}
+
+.table-container > a{
+    margin-bottom: 16px;
+    display: inline-block;
 }
 
